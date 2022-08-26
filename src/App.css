@@ -6,6 +6,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: Poppins, Arial, Helvetica;
 }
 
@@ -56,6 +57,7 @@ a{
 .veda{
   width: min(80vw,400px);
   height: min(80vw,400px);
+  clip-path: circle(48% at 51.5%);
 }
 
 .App-header{
@@ -84,11 +86,8 @@ color: black;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
-/*background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
- background: linear-gradient(to top, #00ff88 0%, #61efff 100%);*/
-
 .logo-img{
-  width: min(400px,88vw);
+  width: min(520px,90vw);
   height: min(420px,88vw);
 }
 .desc{
@@ -99,7 +98,7 @@ justify-content: space-around;
   margin-top: 10px;
 }
 .logo_des{
-  margin-top: 100px;
+  margin-top: 150px;
   width: 90vw;
   display: flex;
   align-items: center;
@@ -113,6 +112,9 @@ padding: 20px;
 text-align: center;
 }
 .vtxt{
+
+  font-weight: lighter;
+  font-size: 18px;
 }
 
 .p{
@@ -146,6 +148,8 @@ text-align: justify;
   color: whitesmoke;
   transition: all 0.3s ease-out;
   border-radius: 10px;
+  padding: 5px;
+  text-align: center;
   background-image: linear-gradient(180deg, #2196F3 0%, #3700ff 100%);
 }
 .skytxt{
@@ -223,9 +227,15 @@ input{
   background-color: #3700ff;
   color: whitesmoke;
 }
+
+span{
+  font-size:  30px;
+  font-weight: bold;
+}
+
 pre{
   font-family: "Poppins", Arial, Helvetica;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -242,6 +252,7 @@ pre{
   background-color: whitesmoke;
   transition: all 0.3s ease-out;
   border-radius: 10px;
+  padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
   }
 .hid-card > div{
@@ -303,7 +314,7 @@ button:hover {
   background-color: #3700ff;
   color: whitesmoke;
   margin-top: 0;
-  height: 300px;
+  height: auto;
 }
 .contact{
   height: min(200px,80vw);
@@ -314,6 +325,7 @@ button:hover {
   height: min(200px,80vw);
   padding: min(60px,5vw);
   font-size: 22px;
+  height: auto;
 }
 @keyframes pulse512 {
  0% {
@@ -334,12 +346,19 @@ button:hover {
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px 300px;
 }}
-@media only screen and (max-width: 850px){
-  .mobile-h{
+@media only screen and (max-width: 980px){
+.mobile-h{
     display: inline;
     margin-top: 0;
     margin-bottom: 10px;
   }
+  .temple{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  
   .banner,.logo_des,.form{
     flex-direction: column;
   }
@@ -348,10 +367,7 @@ button:hover {
   .form-data{
     border-radius: 10px 10px 0 0;
   }
-  .temple{
-    display: none;
-  }
-
+  
   .thanks{
     border-radius: 0 0 10px 10px;
   }
@@ -374,7 +390,7 @@ button:hover {
   width: 70vw;
   height: 70vw;
 }
-,.footer{
+.footer{
   flex-direction: column;
 }
 }

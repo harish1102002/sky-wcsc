@@ -1,5 +1,5 @@
 import './App.css';
-import a from "./images/veda.png";
+import a from "./images/veda.webp";
 import b from "./images/logo.png";
 import c from "./images/m1.JPG";
 import d from "./images/m3.jpg";
@@ -40,9 +40,6 @@ const coll=collection(db,'users');
   var d=document.getElementsByTagName("input");
   if(d[0].value.trim()!="" && d[1].value.trim()!=""&& d[2].value.trim()!="")
   alert("Thanks for registering");
-    console.log(document.getElementById("1").value);
-    console.log(document.getElementById("2").value);
-    console.log(document.getElementById("3").value);
     addDoc(coll,{
       Name:document.getElementById("1").value,
       Phone:document.getElementById("2").value,
@@ -71,9 +68,9 @@ const coll=collection(db,'users');
       };
   },[n,scrollPosition]);
 
-  const events=[["Foundation Course()","6 AM - 8 AM(12 days)\n10 AM - 1 PM(6 days)\n5:30 PM - 7:30 PM (12 days)"],
+  const events=[["Foundation Course \nஅடிப்படைப்\nபயிற்சி","6 AM - 8 AM(12 days)\n10 AM - 1 PM(6 days)\n5:30PM - 7:30PM(12 days)"],
   ["Introspection Courses","Introspection-1\nIntrospection-2\nIntrospection-3"],
-  ["Brahmagnyanam Course","The Final stage of\nIntrospection courses"],["Events & Lectures",
+  ["Brahmagnyanam\nCourse\nபிரம்ம ஞானம் \nபயிற்சி ஆழியார்","The Final stage of\nIntrospection courses"],["Events & Lectures",
   "We also conduct sessions \nfor training the youth\nto stay fit mentally and\nphysically "]]
 
   return (
@@ -111,7 +108,7 @@ const coll=collection(db,'users');
     </div></div>
     <div className="App">
     <div className={(scrollPosition>1)? 'navbar1 navbar2':"navbar1"}>
-      <h2 className="temple">Temple of Conciousness Kasakkaranoor</h2>
+      <h1 className="temple">Temple of Conciousness Kasakkaranoor</h1>
       <a href="#banner">Home</a>
       <a href="#event">Events</a>
       <a href="#memory">Memories</a>
@@ -136,13 +133,14 @@ const coll=collection(db,'users');
       <div className="logo">
       <img src={a} className="logo-img" />
       </div>
+
       <div className="skytxt">
-      <p classname="vtxt">
-      <h2>Joint Meditation</h2>
-       Timing- 6:30 am-7:00 am, 11 am - 12 pm , 6:30 pm - 7 pm
-      <h2>Weekly Lecture</h2>
-      Timing-Every wednesday 7 pm - 7:30 pm
-      <h2>Mounam</h2>
+      <p className="vtxt">
+      <span>Joint Meditation</span><br/>(கூட்டு தியானம்)<br/>
+      Timing- 6:30 am-7:00 am,<br/>11am - 12pm, 6:30pm - 7pm<br/><br/>
+     <span> Weekly Lecture</span><br/>
+      Timing-Every wednesday<br/>7 pm - 7:30 pm<br/>
+      <br/><span>Mounam</span><br/>(மௌனம்)<br/>
       Timing- every second saturday 9:30 am- 5:00pm
       </p></div>
       </div></div>
@@ -151,7 +149,7 @@ const coll=collection(db,'users');
       {
         events.map((e)=>(
         <div className="card-tot">
-        <div className="top-card"><h2 className="course">{e[0]}</h2></div>
+        <div className="top-card"><h2 className="course"><pre>{e[0]}</pre></h2></div>
         <div className="hid-card">
         <br />
         <div>
@@ -163,7 +161,7 @@ const coll=collection(db,'users');
         ))
       }
       </div>
-      <h1 className="nost" id="memory">Nostalgia</h1>
+      <h1 className="nost" id="memory">Memories</h1>
       <div className="carousel">
       <img  className="image1" src={images[n]} />
       <img  className="image" src={images[(n+1)%images.length]} />
