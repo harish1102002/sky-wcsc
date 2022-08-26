@@ -187,7 +187,6 @@ text-align: justify;
   justify-content: center;
   padding: 50px;
   border-radius: 10px;
-  box-shadow: 0 8px 12px 0;
 }
 
 .form-data{
@@ -219,7 +218,7 @@ input{
 }
 .thanks{
 
-  height: 75vh;
+  height: calc(463px - 1vw);
   width: min(85vw,450px);
   text-align: center;
   border-top-right-radius: 10px;
