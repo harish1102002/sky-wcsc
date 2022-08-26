@@ -4,6 +4,7 @@ import b from "./images/logo.png";
 import c from "./images/m1.JPG";
 import d from "./images/m3.jpg";
 import e from "./images/m4.jfif";
+import f from "./images/back.jpg";
 
 import {useState, useEffect} from "react";
 import { initializeApp } from "firebase/app";
@@ -59,7 +60,7 @@ const coll=collection(db,'users');
   {
     const id = setTimeout(()=>{
     setn((n+1)%3)}
-    ,6000);
+    ,4000);
     window.addEventListener("scroll", handleScroll);
 
     return()=>{
@@ -108,7 +109,7 @@ const coll=collection(db,'users');
     </div></div>
     <div className="App">
     <div className={(scrollPosition>1)? 'navbar1 navbar2':"navbar1"}>
-      <h1 className="temple">Temple of Conciousness Kasakkaranoor</h1>
+      <h1 className="temple">Temple of Consciousness Kasakkaranoor</h1>
       <a href="#banner">Home</a>
       <a href="#event">Events</a>
       <a href="#memory">Memories</a>
@@ -126,6 +127,7 @@ const coll=collection(db,'users');
       </p>
 
       </div>
+      <div><img className="build" src={f}/></div>
       </div></div>
 
       <div className="container" id="banner">
