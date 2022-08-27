@@ -118,7 +118,7 @@ const coll=collection(db,'users');
       <div className="desc">
 
       <div className="logo_des"> 
-      <div className="mobile-h"><h2>Temple of Conciousness Kasakkaranoor</h2></div>
+      <div className="mobile-h"><h2>Temple of Consciousness Kasakkaranoor</h2></div>
       <div><img className="veda" src={b}/></div>
       <div className="vedatxt">
       <h1>About WCSC</h1>
