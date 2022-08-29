@@ -14,6 +14,7 @@ html{
   text-align: center;
   overflow: hidden;
 }
+
 .navbar1{
   position: fixed;
   display: flex;
@@ -26,11 +27,13 @@ html{
   z-index: 3;
   transition: all 0.3s ease-out;
 }
+
 .mobile-h{
 margin-top: 100px;
 color: whitesmoke;
 display: none;
 }
+
 .navbar1 h1{
   color: #fff;
   font-family: inherit;
@@ -41,13 +44,10 @@ display: none;
   color:  #fff;
 }
 
-.navbar2 h1{
-  /*color: white;*/
-}
-
 .nav{
   margin-right: -100px;
 }
+
 a{
   text-decoration: none;
   color: white;
@@ -316,17 +316,20 @@ button:hover {
   margin-top: 0;
   height: auto;
 }
+
 .contact{
   height: min(200px,80vw);
   padding: min(60px,5vw);
   font-size: 22px;
 }
+
 .address{
   height: min(200px,80vw);
   padding: min(60px,5vw);
   font-size: 22px;
   height: auto;
 }
+
 @keyframes pulse512 {
  0% {
   box-shadow: 0 0 0 0 #05bada66;
@@ -340,6 +343,7 @@ button:hover {
   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
  }
 }
+
 a:hover{
 color: #11e809;
 }
@@ -350,6 +354,7 @@ color: #11e809;
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px 300px;
 }}
+
 @media only screen and (max-width: 980px){
 .mobile-h{
     display: inline;
@@ -366,6 +371,7 @@ color: #11e809;
   height: min(80vw,350px);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
 }
+
 @media only screen and (max-width: 850px){
   
   .banner,.logo_des,.form{
@@ -390,6 +396,7 @@ color: #11e809;
     justify-items: center;
   }
 }
+
 @media only screen and (max-width: 550px){
 .cards{
   grid-template-columns: 1fr;
